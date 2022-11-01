@@ -16,32 +16,163 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <title>wishlist</title>
+    <title>Tufts Metaseminar</title>
   </head>
-<body>
-	<div class="container">
-        <div class="jumbotron" id="home">
-          <h1>Wish List</h1>
-        <p class="lead" style="padding-top: 0pt">Possible future topics</p>
+  <body data-spy="scroll" data-target="#navbar">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar" class="collapse navbar-collapse">
+          <a class="navbar-brand" href="#">Metaseminar</a>
+          <ul class="nav navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#topics">Topics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#schedule">Schedule</a>
+            </li>
+			<li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="wishlist.html">Wishlist</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Archive
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="https://dismyth.github.io/logic-wg/index.html">22Sp</a>
+                </div>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item"><a class="nav-link" href="https://math.tufts.edu/">Math @ Tufts</a></li>
+          </ul>
+        </div>
+        
+        </div>
+      </nav>
+
+
+	<div class="container" style="padding-top: 20pt; padding-bottom: 0pt">
+    <div class="jumbotron" id="home"  style=" margin-bottom: 10pt">
+	  <h1 >The Metaseminar</h1>
+    <p class="lead" style=" margin-bottom: -20pt">
+      A working group in logic, metaphysics, and formal methods at Tufts University<br>
+      Wednesdays 4:30-5:30 pm<br>
+      Joyce Cummings Center, Room 502<br>
+      Medford, MA</p>
+	</div>
     </div>
 
     <div class="container">
-      <p>
-        <ul>
-        <li>Formalization of Godel’s Ontological Proof of the Existence of God</li>
-        <li>Intuitionistic Mathematics</li>
-        <li>Applications of Topos Theory to Music Theory</li>
-        <li>Topological interpretation of first order modal logic.
-          <a href="https://kilthub.cmu.edu/articles/journal_contribution/Topology_and_Modality_The_Topological_Interpretation_of_First-Order_Modal_Logic/6492974/1">Link to paper</a></li>
-        <li>Topological semantics for epistemic logic 
-          <a href="https://www.cambridge.org/core/journals/review-of-symbolic-logic/article/abs/logic-and-topology-for-knowledge-knowability-and-belief/5FABD4694DD240136687E02EADCFF5BA">Link to paper</a></li>
-        <li>Theories of truth, especially as the relate to the Liar Paradox.<br> See work of Harry Field (Saving Truth from Paradox), Saul Kripke (<a href="https://www.jstor.org/stable/2024634?seq=2#metadata_info_tab_contents">Outline of a theory of truth</a>), and Graham Priest.</li>
-        <ul>
-      </p>
-       </section>
-    </div> <!-- /container -->
+      <section id="topics">
+	  <div class="page-header" style="padding-bottom: 5pt"><h2>Fall 2022 Topic: Categories and Types</h2></div>
+    Type theory is an extension of first-order logic in which terms range not only over objects in a domain of discourse, 
+    but also over sets, relations, and functions on these objects. New syntactic objects called types are used to organize the terms, 
+    ensuring that they are combined and invoked in logically meaningful ways.<br>
+
+    Category theory can be thought as an abstract algebraic formulation of set theory in which the notion of a map between sets is treated as primary 
+    rather than the usual element membership relation. It has proved to be an enormously useful tool for studying "structure" across a broad range of disciplines. 
+    In particular, category theory has entered mathematical logic with the realization that suitably structured categories can be used as models of various type theories.
+    
+    We will have several introductory lectures on category theory and type theory with an eye toward:<br>
+    <li>In what sense (if any) is category theory an alternative to set theory as a foundation for mathematics?</li>
+    <li>How can category theory help computers prove theorems?</li>
+    <li>Is category theory useful for formal semantics or metaphysics?</li>
+    
+    <h4 style="padding-top: 10pt">References:</h4>
+    <b>Main</b><br>
+    &emsp;Samson Abramsky and Nikos Tzevelekos, Introduction to Categories and Categorical Logic. [<a href = "./Categories and Categorical Logic.pdf">link to book</a>]<br>
+    &emsp;Crole, R. L. Categories for Types. Cambridge Mathematical Textbooks. Cambridge University Press, 1993.<br>
+    
+    <b>Supplemental</b><br>
+    &emsp;Awodey, Steve. Category Theory. Oxford Logic Guides, Oxford University Press, 2006. Second edition, 2010.<br>
+    &emsp;Michael Barr and Charles Wells. Category Theory for Computing Science.
+    Prentice Hall, 1990.
+    [<a href = "https://www.math.mcgill.ca/triples/Barr-Wells-ctcs.pdf">link</a>]<br>
+    &emsp;Hans Halvorson. List of references for category theory in phil of math and phil of sci. Course note for phil 536, sp 2011. 
+    [<a href = "http://www.princeton.edu/~hhalvors/teaching/phi536_s2011/reading-list.pdf">link</a>]<br>
+    &emsp;Peter B. Andrews, An Introduction to Mathematical Logic and Type Theory: To Truth Through Proof.<br>
+    &emsp;F. William Lawvere, Conceptual Mathematics: An introduction to categories.<br>
+    &emsp;Tom Leinster, Rethinking set theory. [<a href = "./Rethinking Set Theory.pdf">link to paper</a>]<br>
+    <hr/>
+	  </section>
+	</div>
 
     <div class="container">
-      <p>Link to <a href="index.html">Main Page</a></p>
+	  <section id="schedule">
+	  <div class="page-header"><h2>Schedule</h2></div>
+  
+	  <table class="table table-striped table-condensed">
+	  <tr> <th class="text-left">Date</th>   <th class="text-left">Topic</th> <th class="text-left">Speaker</th></tr>
+	  <tr> <th class="text-left">Sep 14</th> <td>Categories</td>                          <td>David Smyth</td> </tr>
+	  <tr> <th class="text-left">Sep 21</th> <td>Categories</td>                          <td>David Smyth</td> </tr>
+	  <tr> <th class="text-left">Sep 28</th> <td>Types &emsp;
+		[<a href = "./types-and-categories-I-22-09-28.pdf">slides</a>]</td>           <td>George McNinch</td> </tr>
+	  <tr> <th class="text-left">Oct 05</th> <td>Types</td>                               <td>George McNinch</td> </tr>
+	  <tr> <th class="text-left">Oct 12</th> <td>Type Theory in Formal Semantics &emsp;
+		[<a href = "./SemanticsHandout.pdf">handout</a>]</td>     	              <td>Dilip Ninan</td> </tr>
+	  <tr> <th class="text-left">Oct 19</th> <td>Categories</td>                          <td>David Smyth</td> </tr>
+	  <tr> <th class="text-left">Oct 26</th> <td>Categories</td>                          <td>David Smyth</td> </tr>
+	  <tr> <th class="text-left">Nov 02</th> <td>TBD</td>                                 <td>TBD</td> </tr>
+	  <tr> <th class="text-left">Nov 09</th> <td>TBD</td>                                 <td>TBD</td> </tr>
+	  <tr> <th class="text-left">Nov 16</th> <td>Higher-order Logic as Metaphysics</td>   <td>Helena Fang</td> </tr>
+	  <tr> <th class="text-left">Nov 23</th> <td>Thanksgiving</td>                        <td>Thanksgiving</td> </tr>
+	  <tr> <th class="text-left">Nov 30</th> <td>Grounding and Metagrounding</td>         <td>Brian Epstein</td> </tr>
+	  <tr> <th class="text-left">Dec 07</th> <td>TBD</td>             		      <td>TBD</td> </tr>
+	  <tr> <th class="text-left"></th><td></td><td></td></tr>
+	  </table>
+	  </section>
+	<hr/>
   </div>
+
+  <div class="container">
+		<section id="about">
+		<div class="page-header">
+    <h2>About the Seminar</h2></div>
+		<p>The Metaseminar is interested in mathematical logic, as well as formal methods more generally across a broad range of disciplines, 
+       e.g. mathematics, philosophy, linguistics, economics, and music theory. 
+       We are interested not only in mathematical questions about these formal methods (i.e. how they work), but also
+       philosophical questions (such as their ultimate aims and limitations), and historical/sociological questions 
+       (i.e. why certain systems gain prestige and become standard).
+       <br>
+       The Metaseminar is part working group, part seminar. We’re a working group in the sense that, 
+       each semester, we pick a book/topic and try to make some concerted progress towards understanding it. 
+       We’re a seminar in that we enjoy having guest speakers and one-off lectures on a wide variety of topics. 
+       Undergraduate students, graduate students, and faculty from all disciplines are welcome to attend.
+      </p>
+		</section>
+	</div> <!-- /container -->
+
+  <div class="container">
+	 <section id="wishlist">
+	 <div class="page-header"><h2>Wishlist</h2></div>
+   <p>We maintain a wish list of topics that various participants would like to hear more about at some future date.
+      Some of these topics may be suitable for a series of 1-3 lectures, while some may require a full semester of investigation. 
+      If you would like to add a topic to the wish list, please e-mail David Smyth.<br>
+      <a href = "wishlist.html" target="_blank">Here</a> is the current wish list.
+   </p>
+	</section>
+	</div> <!-- /container -->
+
+</div> <!-- /container -->
+
+  <div class="container">
+  <div class="page-header"><h2>Past Semesters</h2></div>
+  <p>Spring 2022: <a href="https://dismyth.github.io/logic-wg/index.html">Non-Classical Logic</a></p>
+  <p>To be added to the mailing list, please e-mail david [dot] smyth [at] tufts.edu  </p>
+  </section>
+  </div> <!-- /container -->
+
+  <div class ="container">
+    <p class = footer>
+    <br><br>
+    <em>Last modified on Sep 29, 2022.</em><br>
+  </div>
+
 </body>
+</html>
